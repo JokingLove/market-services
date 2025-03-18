@@ -116,6 +116,7 @@ func (a *API) startServer(serverConfig config.ServerConfig) error {
 	}
 	log.Info("API server started", "addr", srv.Addr().String())
 	a.apiSrv = srv
+	fmt.Println(a.apiSrv)
 	return nil
 }
 
